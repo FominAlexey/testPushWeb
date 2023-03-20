@@ -26,6 +26,7 @@ getToken(messaging, { vapidKey: "BNwd01HN4ZifeePaAhH9LfCp11RT9JurOdia6XqhF85R4X-
         if (currentToken) {
             // Send the token to your server and update the UI if necessary
             console.log(currentToken)
+            store.commit('getToken', currentToken)
             // ...
         } else {
             // Show permission request UI
@@ -36,16 +37,5 @@ getToken(messaging, { vapidKey: "BNwd01HN4ZifeePaAhH9LfCp11RT9JurOdia6XqhF85R4X-
         console.log('An error occurred while retrieving token. ', err);
         // ...
     });
-
-// Request Permission of Notifications
-// messaging.requestPermission().then(() => {
-//     console.log('Notification permission granted.');
-//     // Get Token
-//     getToken(messaging, { vapidKey: "BNwd01HN4ZifeePaAhH9LfCp11RT9JurOdia6XqhF85R4X-hv32TPnPURFUxiWn-KIxb43reP7xkXJp0wOIEjS0" }).then((token) => {
-//         console.log(token)
-//     })
-// }).catch((err) => {
-//     console.log('Unable to get permission to notify.', err);
-// });
 
 createApp(App).use(store).use(router).mount("#app");

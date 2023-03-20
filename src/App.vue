@@ -1,11 +1,28 @@
 <template>
+  <div>Token: {{ token }}</div>
   <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </nav>
   <router-view />
+  <button v-on:click="getToken()"></button>
 </template>
-
+<script>
+export default {
+  data() {
+    return {
+      token: '',
+    }
+    
+  },
+  methods: {
+    getToken() {
+      this.token = this.$store.state.token;
+      console.log(this.$store.state.token)
+    }
+}
+}
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
