@@ -5,7 +5,7 @@
     <router-link to="/about">About</router-link>
   </nav>
   <router-view />
-  <button v-on:click="getToken()"></button>
+  <button v-on:click="getToken()">Get TOKEN!</button>
 </template>
 <script>
 export default {
