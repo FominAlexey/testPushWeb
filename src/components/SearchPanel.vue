@@ -1,3 +1,3 @@
 <template>
-	<div>SearchPanel</div>
+  <div>SearchPanel</div>
 </template>

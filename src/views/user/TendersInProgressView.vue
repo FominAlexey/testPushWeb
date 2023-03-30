@@ -1,3 +1,3 @@
 <template>
-	<div>TendersProgress</div>
+  <div>TendersProgress</div>
 </template>

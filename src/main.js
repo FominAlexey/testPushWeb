@@ -14,6 +14,7 @@ import FCMToken from "./services/firebase";
 //Работа с запросами
 import axios from "axios";
 import VueAxios from "vue-axios";
+import "./registerServiceWorker";
 
 //Получение Device_Token для FCM
 FCMToken();
@@ -22,8 +23,8 @@ FCMToken();
 loadFonts();
 
 createApp(App)
-	.use(router)
-	.use(store)
-	.use(vuetify)
-	.use(VueAxios, axios)
-	.mount("#app");
+  .use(router)
+  .use(store)
+  .use(vuetify)
+  .use(VueAxios, axios)
+  .mount("#app");

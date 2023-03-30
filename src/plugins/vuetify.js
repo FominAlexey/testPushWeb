@@ -9,7 +9,7 @@ import * as components from "vuetify/lib/components";
 import * as directives from "vuetify/lib/directives";
 
 export default createVuetify(
-	components,
-	directives
-	// https://vuetifyjs.com/en/introduction/why-vuetify/#feature-guides
+  components,
+  directives
+  // https://vuetifyjs.com/en/introduction/why-vuetify/#feature-guides
 );

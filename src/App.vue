@@ -1,17 +1,17 @@
 <template>
-	<v-app>
-		<v-main>
-			<component :is="this.$route.meta.layout"></component>
-		</v-main>
-	</v-app>
+  <v-app>
+    <v-main>
+      <component :is="this.$route.meta.layout"></component>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
 export default {
-	name: "App",
+  name: "App",
 
-	data: () => ({
-		//
-	}),
+  data: () => ({
+    //
+  }),
 };
 </script>

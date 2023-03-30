@@ -5,12 +5,12 @@ import LoginRoutes from "./routes/login.routes";
 const routes = [...UserRoutes, ...LoginRoutes];
 
 const router = createRouter({
-	history: createWebHistory(process.env.BASE_URL),
-	routes,
+  history: createWebHistory(process.env.BASE_URL),
+  routes,
 });
 
 router.afterEach((to, from) => {
-	document.title = to.meta.title || "КБ Автоматика";
+  document.title = to.meta.title || "КБ Автоматика";
 });
 
 export default router;
